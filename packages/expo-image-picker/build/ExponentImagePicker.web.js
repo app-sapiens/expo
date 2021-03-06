@@ -73,6 +73,7 @@ function openFileBrowserAsync({ mediaTypes, capture = false, allowsMultipleSelec
                     resolve({
                         cancelled: false,
                         ...img,
+                        file: input.files[0]
                     });
                 }
                 else {
@@ -80,6 +81,7 @@ function openFileBrowserAsync({ mediaTypes, capture = false, allowsMultipleSelec
                     resolve({
                         cancelled: false,
                         selected: imgs,
+                        files: input.files[0]
                     });
                 }
             }
